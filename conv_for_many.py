@@ -18,7 +18,7 @@ pdf_files = [filename for filename in os.listdir(
 save_dir = '../Семь сестёр/1'
 
 for pdf_file in pdf_files:
-    images = convert_from_path(pdf_file, size=(None, 1000), transparent=True,
+    images = convert_from_path(pdf_file, size=(None, 1000),
                                jpegopt={"progressive": True})
 
     for i, image in enumerate(images):
